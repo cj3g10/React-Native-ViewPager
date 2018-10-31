@@ -107,6 +107,7 @@ export default class PagerTitleIndicator extends Component {
         return (
             <View style={[styles.indicatorContainer, this.props.style]} >
                  <ScrollView
+                 alwaysBounceHorizontal={false}
                     scrollEventThrottle={1}
                     onScroll={e => {
                         this._contentHorOffset = e.nativeEvent.contentOffset.x;
